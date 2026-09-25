@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyBots — Automação Inteligente</title>
+  <meta name="description" content="PyBots: especialistas em automação, bots de sinais, integração WhatsApp, sistemas PDV, APIs e plataformas de cassino. Soluções sob medida para o seu negócio." />
+  <meta property="og:title" content="PyBots — Automação Inteligente" />
+  <meta property="og:description" content="Bots, APIs, WhatsApp, PDV e sistemas de cassino. Soluções que trabalham por você 24/7." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">🐍</span>
+        <span class="logo-text">Py<span class="accent">Bots</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato" class="btn-nav">Fale Conosco</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="glow glow-3"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Sistemas ativos 24/7 &mdash; Automação em tempo real
+      </div>
+
+      <h1 class="hero-title">
+        Automatizamos o seu<br />
+        <span class="gradient-text">negócio digital</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Bots de sinais, integração WhatsApp, sistemas PDV, APIs robustas
+        e plataformas de cassino. Soluções feitas por especialistas,
+        entregues com precisão.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contato" class="btn-primary">
+          Iniciar projeto
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#produtos" class="btn-ghost">Ver produtos</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projetos entregues</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+          <span class="stat-label">Sistemas em produção</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Uptime médio</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terminal flutuante -->
+    <div class="hero-terminal">
+      <div class="terminal-header">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="t-title">pybots ~ terminal</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="t-line"><span class="t-prompt">$</span> pybots deploy --env production</div>
+        <div class="t-line t-out">✓ Bot de sinais iniciado</div>
+        <div class="t-line t-out">✓ API WhatsApp conectada</div>
+        <div class="t-line t-out">✓ PDV online</div>
+        <div class="t-line t-out t-green">🚀 Todos os sistemas operacionais</div>
+        <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">|</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">O que fazemos</p>
+        <h2 class="section-title">Soluções completas para<br />automação e escala</h2>
+        <p class="section-desc">De bots de sinais a sistemas PDV, entregamos tecnologia que trabalha por você.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-aos>
+          <div class="service-icon" style="--icon-color: #5865F2;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3>Bots de Sinais</h3>
+          <p>Bots automáticos para Blaze, Roleta, Aviator e outras plataformas. Análise de padrões em tempo real com envio via Telegram.</p>
+          <div class="service-tags">
+            <span>Telegram</span><span>Python</span><span>Real-time</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon" style="--icon-color: #25D366;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>WhatsApp & CRM</h3>
+          <p>Integração completa com WhatsApp Business API. Atendimento automatizado, fluxos inteligentes e gestão de leads com CRM integrado.</p>
+          <div class="service-tags">
+            <span>WhatsApp API</span><span>Automação</span><span>CRM</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon" style="--icon-color: #F59E0B;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Sistema PDV</h3>
+          <p>Ponto de venda completo para supermercados e varejo. Gestão de estoque, emissão de NFC-e, relatórios e controle de caixa.</p>
+          <div class="service-tags">
+            <span>PDV</span><span>Estoque</span><span>NFC-e</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon" style="--icon-color: #EF4444;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2"/><path d="M6.343 6.343a8 8 0 1 0 11.314 11.314A8 8 0 0 0 6.343 6.343zM3.515 3.515a13 13 0 1 1 16.97 16.97A13 13 0 0 1 3.515 3.515z"/></svg>
+          </div>
+          <h3>Plataformas de Cassino</h3>
+          <p>APIs de resultados, sistemas de predição, backends completos e integrações com plataformas como Blaze, Jonbet e PinBet.</p>
+          <div class="service-tags">
+            <span>APIs</span><span>Predição</span><span>Backend</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon" style="--icon-color: #8B5CF6;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>APIs & Backends</h3>
+          <p>Desenvolvimento de APIs REST robustas, gateways de IA, proxies OpenAI e backends escaláveis com deploy em VPS ou cloud.</p>
+          <div class="service-tags">
+            <span>FastAPI</span><span>Flask</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon" style="--icon-color: #06B6D4;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+          </div>
+          <h3>Sistemas Web & SaaS</h3>
+          <p>Dashboards modernos, painéis de controle, sistemas de gestão e plataformas SaaS completas com autenticação e controle de acesso.</p>
+          <div class="service-tags">
+            <span>React</span><span>Python</span><span>SaaS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUTOS ===================== -->
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nossos produtos</p>
+        <h2 class="section-title">Sistemas prontos para uso</h2>
+        <p class="section-desc">Produtos desenvolvidos e em produção. Licencie ou personalize para o seu negócio.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card featured" data-aos>
+          <div class="product-badge">Popular</div>
+          <div class="product-icon">🎰</div>
+          <h3>Bot de Sinais Blaze</h3>
+          <p>Sistema completo de envio de sinais para Double e Crash na Blaze. Análise de padrões, gale automático e gestão de grupos VIP no Telegram.</p>
+          <ul class="product-features">
+            <li>✓ Análise em tempo real</li>
+            <li>✓ Suporte a Gale automático</li>
+            <li>✓ Painel de administração</li>
+            <li>✓ Multi-grupo Telegram</li>
+          </ul>
+          <a href="#contato" class="btn-product">Solicitar licença</a>
+        </div>
+
+        <div class="product-card" data-aos>
+          <div class="product-icon">💬</div>
+          <h3>WhatTicket Flow</h3>
+          <p>Plataforma de atendimento via WhatsApp com fluxos automáticos, tickets, transferência de atendimento e relatórios completos.</p>
+          <ul class="product-features">
+            <li>✓ Multi-atendentes</li>
+            <li>✓ Fluxos inteligentes</li>
+            <li>✓ Histórico completo</li>
+            <li>✓ API aberta</li>
+          </ul>
+          <a href="#contato" class="btn-product">Solicitar demonstração</a>
+        </div>
+
+        <div class="product-card" data-aos>
+          <div class="product-icon">🛒</div>
+          <h3>SysPDV Supermercado</h3>
+          <p>Sistema PDV completo para varejo e supermercados. Controle de estoque, caixa, relatórios gerenciais e emissão fiscal.</p>
+          <ul class="product-features">
+            <li>✓ Frente de caixa rápida</li>
+            <li>✓ Controle de estoque</li>
+            <li>✓ Relatórios gerenciais</li>
+            <li>✓ Suporte técnico incluso</li>
+          </ul>
+          <a href="#contato" class="btn-product">Solicitar demonstração</a>
+        </div>
+
+        <div class="product-card" data-aos>
+          <div class="product-icon">🤖</div>
+          <h3>LLM Gateway</h3>
+          <p>Proxy OpenAI-compatible que roteia requests para múltiplos modelos de IA (Ollama, Claude, GPT). Ideal para times e aplicações internas.</p>
+          <ul class="product-features">
+            <li>✓ Multi-modelo</li>
+            <li>✓ Compatível com OpenAI SDK</li>
+            <li>✓ Controle de custos</li>
+            <li>✓ Deploy em VPS</li>
+          </ul>
+          <a href="#contato" class="btn-product">Saber mais</a>
+        </div>
+
+        <div class="product-card" data-aos>
+          <div class="product-icon">📊</div>
+          <h3>API Resultados Cassino</h3>
+          <p>API de resultados em tempo real para Blaze e Jonbet. Endpoints para Double, Crash e Roleta com histórico e websocket.</p>
+          <ul class="product-features">
+            <li>✓ Tempo real via WebSocket</li>
+            <li>✓ Histórico completo</li>
+            <li>✓ Alta disponibilidade</li>
+            <li>✓ Docs completa</li>
+          </ul>
+          <a href="#contato" class="btn-product">Ver documentação</a>
+        </div>
+
+        <div class="product-card" data-aos>
+          <div class="product-icon">🦙</div>
+          <h3>Ollama Gateway</h3>
+          <p>Infraestrutura de IA local com Ollama, roteamento inteligente e interface web. Rode modelos LLM na sua própria VPS.</p>
+          <ul class="product-features">
+            <li>✓ Modelos locais</li>
+            <li>✓ Privacidade total</li>
+            <li>✓ Interface web</li>
+            <li>✓ API compatível</li>
+          </ul>
+          <a href="#contato" class="btn-product">Saber mais</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMO FUNCIONA ===================== -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Processo</p>
+        <h2 class="section-title">Do briefing ao deploy</h2>
+        <p class="section-desc">Metodologia ágil com comunicação direta. Você acompanha cada etapa.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step" data-aos>
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Briefing</h3>
+            <p>Entendemos seu negócio, necessidades e objetivos. Definimos escopo e estimativas com clareza.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-aos>
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Desenvolvimento</h3>
+            <p>Código limpo, documentado e versionado no GitHub. Atualizações constantes e comunicação direta.</p>
+          </div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step" data-aos>
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Deploy & Suporte</h3>
+            <p>Entrega em produção com monitoramento. Suporte contínuo e evolução da plataforma conforme necessário.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TECH STACK ===================== -->
+  <section class="tech-stack">
+    <div class="container">
+      <p class="stack-label">Tecnologias que usamos</p>
+      <div class="stack-marquee">
+        <div class="stack-track">
+          <span>Python</span><span>FastAPI</span><span>Flask</span><span>React</span>
+          <span>Node.js</span><span>Docker</span><span>PostgreSQL</span><span>Redis</span>
+          <span>Telegram Bot API</span><span>WhatsApp Business</span><span>Ollama</span>
+          <span>OpenAI</span><span>Nginx</span><span>Linux VPS</span><span>GitHub Actions</span>
+          <!-- duplicado para loop -->
+          <span>Python</span><span>FastAPI</span><span>Flask</span><span>React</span>
+          <span>Node.js</span><span>Docker</span><span>PostgreSQL</span><span>Redis</span>
+          <span>Telegram Bot API</span><span>WhatsApp Business</span><span>Ollama</span>
+          <span>OpenAI</span><span>Nginx</span><span>Linux VPS</span><span>GitHub Actions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CLIENTES ===================== -->
+  <section class="clients" id="clientes">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Portfólio</p>
+        <h2 class="section-title">Sistemas em produção</h2>
+        <p class="section-desc">Projetos ativos desenvolvidos e mantidos pela PyBots.</p>
+      </div>
+
+      <div class="clients-grid">
+
+        <div class="client-card" data-aos>
+          <div class="client-status online"></div>
+          <div class="client-icon">🎰</div>
+          <div class="client-info">
+            <h4>PinBet Site</h4>
+            <p>Plataforma de apostas com sistema de sinais integrado</p>
+            <span class="client-tag">Cassino · Bots · API</span>
+          </div>
+        </div>
+
+        <div class="client-card" data-aos>
+          <div class="client-status online"></div>
+          <div class="client-icon">📦</div>
+          <div class="client-info">
+            <h4>Supermarket PDV</h4>
+            <p>Sistema de ponto de venda para rede de supermercados</p>
+            <span class="client-tag">PDV · Varejo · Gestão</span>
+          </div>
+        </div>
+
+        <div class="client-card" data-aos>
+          <div class="client-status online"></div>
+          <div class="client-icon">💬</div>
+          <div class="client-info">
+            <h4>WhatTicket Caracuí</h4>
+            <p>Central de atendimento via WhatsApp em operação</p>
+            <span class="client-tag">WhatsApp · Atendimento · CRM</span>
+          </div>
+        </div>
+
+        <div class="client-card" data-aos>
+          <div class="client-status online"></div>
+          <div class="client-icon">🤖</div>
+          <div class="client-info">
+            <h4>Bot Sinal Cassino</h4>
+            <p>Sistema de sinais multi-plataforma com grupo VIP ativo</p>
+            <span class="client-tag">Telegram · Sinais · Automação</span>
+          </div>
+        </div>
+
+        <div class="client-card" data-aos>
+          <div class="client-status online"></div>
+          <div class="client-icon">📊</div>
+          <div class="client-info">
+            <h4>API Blaze & Jonbet</h4>
+            <p>APIs de resultados em uso por múltiplos desenvolvedores</p>
+            <span class="client-tag">API · WebSocket · Dados</span>
+          </div>
+        </div>
+
+        <div class="client-card" data-aos>
+          <div class="client-status online"></div>
+          <div class="client-icon">🦙</div>
+          <div class="client-info">
+            <h4>LLM Gateway VPS</h4>
+            <p>Infraestrutura de IA rodando em VPS dedicada</p>
+            <span class="client-tag">IA · Ollama · DevOps</span>
+          </div>
+        </div>
+
+        <div class="client-card client-add" id="clienteAtivo">
+          <div class="client-add-icon">+</div>
+          <p>Seu projeto aqui</p>
+          <a href="#contato">Fale conosco</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="about" id="sobre">
+    <div class="container about-container">
+      <div class="about-content" data-aos>
+        <p class="section-eyebrow">Sobre a PyBots</p>
+        <h2>Desenvolvedor full-stack especializado em automação</h2>
+        <p>A PyBots nasceu da paixão por resolver problemas reais com código. Com foco em Python, bots e integrações, transformamos ideias em sistemas que escalam.</p>
+        <p>Baseados no <strong>Brasil, Caucaia-CE</strong>, atendemos clientes em todo o país com entregas remotas ágeis e suporte próximo.</p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <span class="h-icon">🐍</span>
+            <span>Python First</span>
+          </div>
+          <div class="highlight">
+            <span class="h-icon">⚡</span>
+            <span>Entrega ágil</span>
+          </div>
+          <div class="highlight">
+            <span class="h-icon">🔒</span>
+            <span>Código no seu repositório</span>
+          </div>
+          <div class="highlight">
+            <span class="h-icon">📞</span>
+            <span>Suporte direto</span>
+          </div>
+        </div>
+        <a href="https://github.com/aldorip" target="_blank" rel="noopener" class="btn-ghost-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          Ver GitHub &rarr;
+        </a>
+      </div>
+
+      <div class="about-visual" data-aos>
+        <div class="code-window">
+          <div class="cw-header">
+            <span class="cw-dot red"></span>
+            <span class="cw-dot yellow"></span>
+            <span class="cw-dot green"></span>
+            <span class="cw-filename">pybots.py</span>
+          </div>
+          <pre class="cw-code"><code><span class="c-kw">from</span> <span class="c-mod">pybots</span> <span class="c-kw">import</span> Bot, API, PDV
+
+<span class="c-comment"># Seu negócio automatizado</span>
+<span class="c-kw">class</span> <span class="c-cls">NegocioInteligente</span>:
+    <span class="c-kw">def</span> <span class="c-fn">__init__</span>(self):
+        self.bot     = Bot(<span class="c-str">"telegram"</span>)
+        self.api     = API(<span class="c-str">"whatsapp"</span>)
+        self.pdv     = PDV(<span class="c-str">"supermercado"</span>)
+        self.running = <span class="c-bool">True</span>
+
+    <span class="c-kw">async def</span> <span class="c-fn">run</span>(self):
+        <span class="c-comment"># 24/7, sem parar</span>
+        <span class="c-kw">while</span> self.running:
+            <span class="c-kw">await</span> self.bot.send_signal()
+            <span class="c-kw">await</span> self.api.handle_msgs()
+            <span class="c-kw">await</span> self.pdv.process_sale()
+
+<span class="c-comment"># Prontos para escalar com você</span>
+<span class="c-fn">asyncio</span>.run(NegocioInteligente().run())</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Pronto para automatizar?</h2>
+        <p>Leve o seu negócio para o próximo nível com sistemas feitos sob medida.</p>
+      </div>
+      <a href="#contato" class="btn-primary btn-large">
+        Começar agora
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="contact" id="contato">
+    <div class="container contact-container">
+      <div class="contact-info" data-aos>
+        <p class="section-eyebrow">Contato</p>
+        <h2>Vamos construir juntos</h2>
+        <p>Descreva seu projeto e retornaremos em até 24 horas com uma proposta clara.</p>
+
+        <div class="contact-methods">
+          <a href="https://wa.me/5585999999999" target="_blank" rel="noopener" class="contact-method">
+            <span class="cm-icon" style="background: #25D366;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.029 18.88a9.983 9.983 0 0 1-4.756-1.21l-3.332.874.888-3.244a9.982 9.982 0 0 1-1.338-4.988c.002-5.506 4.479-9.979 9.982-9.979 2.67.001 5.176 1.041 7.062 2.929a9.928 9.928 0 0 1 2.92 7.051c-.003 5.506-4.48 9.98-9.982 9.98l-.444-.413z"/></svg>
+            </span>
+            WhatsApp direto
+          </a>
+
+          <a href="mailto:contato@pybots.com.br" class="contact-method">
+            <span class="cm-icon" style="background: #5865F2;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            contato@pybots.com.br
+          </a>
+
+          <a href="https://github.com/aldorip" target="_blank" rel="noopener" class="contact-method">
+            <span class="cm-icon" style="background: #333;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </span>
+            github.com/aldorip
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Serviço de interesse</label>
+          <select id="service" name="service">
+            <option value="">Selecione um serviço</option>
+            <option value="bots">Bots de Sinais</option>
+            <option value="whatsapp">WhatsApp & CRM</option>
+            <option value="pdv">Sistema PDV</option>
+            <option value="cassino">Plataforma Cassino</option>
+            <option value="api">API & Backend</option>
+            <option value="outro">Outro projeto</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">
+          Enviar mensagem
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+        </button>
+        <p class="form-note">Respondemos em até 24 horas. Sem spam.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">🐍</span>
+          <span class="logo-text">Py<span class="accent">Bots</span></span>
+        </a>
+        <p>Automação inteligente para negócios digitais.<br />Feito no Brasil 🇧🇷</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Serviços</h5>
+          <ul>
+            <li><a href="#servicos">Bots de Sinais</a></li>
+            <li><a href="#servicos">WhatsApp API</a></li>
+            <li><a href="#servicos">Sistema PDV</a></li>
+            <li><a href="#servicos">APIs & Backends</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Produtos</h5>
+          <ul>
+            <li><a href="#produtos">Bot Blaze</a></li>
+            <li><a href="#produtos">WhatTicket Flow</a></li>
+            <li><a href="#produtos">SysPDV</a></li>
+            <li><a href="#produtos">LLM Gateway</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="https://github.com/aldorip" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#clientes">Portfólio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024–2025 PyBots. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="https://github.com/aldorip" target="_blank" rel="noopener">Aldo Ribeiro</a></p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
