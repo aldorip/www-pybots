@@ -6,10 +6,6 @@ RUN apk add --no-cache tzdata \
     && echo "America/Sao_Paulo" > /etc/timezone \
     && apk del tzdata
 
-# Config customizada do nginx
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Arquivos estáticos da landing page
 COPY index.html /usr/share/nginx/html/index.html
 COPY assets/   /usr/share/nginx/html/assets/
 

@@ -5,24 +5,8 @@ services:
       dockerfile: Dockerfile
     container_name: www-pybots
     restart: unless-stopped
-    ports:
-      - "80:80"
     environment:
       TZ: America/Sao_Paulo
-    labels:
-      # Dokploy / Traefik — SSL automático via Let's Encrypt
-      - "traefik.enable=true"
-      - "traefik.http.routers.www-pybots.rule=Host(`www.pybots.com.br`) || Host(`pybots.com.br`)"
-      - "traefik.http.routers.www-pybots.entrypoints=websecure"
-      - "traefik.http.routers.www-pybots.tls=true"
-      - "traefik.http.routers.www-pybots.tls.certresolver=letsencrypt"
-      - "traefik.http.services.www-pybots.loadbalancer.server.port=80"
-      # Redirect HTTP → HTTPS
-      - "traefik.http.routers.www-pybots-http.rule=Host(`www.pybots.com.br`) || Host(`pybots.com.br`)"
-      - "traefik.http.routers.www-pybots-http.entrypoints=web"
-      - "traefik.http.routers.www-pybots-http.middlewares=redirect-to-https"
-      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
     networks:
       - dokploy-network
 
