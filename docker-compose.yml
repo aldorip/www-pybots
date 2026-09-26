@@ -1,4 +1,6 @@
 services:
+
+  # ── Landing page (nginx estático) ──────────────────────────
   www-pybots:
     build:
       context: .
@@ -9,6 +11,36 @@ services:
       TZ: America/Sao_Paulo
     networks:
       - dokploy-network
+
+  # ── Tracker / Analytics (FastAPI) ──────────────────────────
+  tracker:
+    build:
+      context: ./tracker
+      dockerfile: Dockerfile
+    container_name: pybots-tracker
+    restart: unless-stopped
+    environment:
+      TZ: America/Sao_Paulo
+      # Senha do painel /analytics  (troque no Dokploy → Environment)
+      TRACKER_SECRET: ${TRACKER_SECRET:-pybots-admin}
+      # Salt para hash de IPs  (troque por valor aleatório)
+      TRACKER_SALT: ${TRACKER_SALT:-pybots-salt-change-me}
+      # Caminho do banco e do GeoIP dentro do volume
+      DB_PATH: /data/events.db
+      GEOIP_PATH: /data/GeoLite2-City.mmdb
+      # Origins aceitos pelo CORS (separados por vírgula)
+      ALLOWED_ORIGINS: https://www.pybots.com.br,http://localhost,http://localhost:8080
+      # Chave gratuita MaxMind para download do GeoLite2
+      # Obtenha em: https://www.maxmind.com/en/geolite2/signup
+      MAXMIND_LICENSE_KEY: ${MAXMIND_LICENSE_KEY:-}
+    volumes:
+      - tracker-data:/data
+    networks:
+      - dokploy-network
+
+volumes:
+  tracker-data:
+    driver: local
 
 networks:
   dokploy-network:
