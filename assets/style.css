@@ -1252,3 +1252,56 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .hero-cta a { text-align: center; justify-content: center; }
   .contact-form { padding: 24px 20px; }
 }
+
+/* ============================================================
+   RANKING DINÂMICO — destaques por popularidade
+   ============================================================ */
+
+/* Badge injetado pelo tracker.js */
+.rank-badge {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+/* Top 1 — Mais popular */
+.product-card.rank-1 {
+  border-color: rgba(245, 158, 11, 0.55) !important;
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 0 0 1px rgba(245, 158, 11, 0.3),
+    0 20px 50px rgba(245, 158, 11, 0.15),
+    0 0 60px rgba(245, 158, 11, 0.08);
+  animation: rankGlow1 3s ease-in-out infinite;
+  z-index: 1;
+}
+.product-card.rank-1 .rank-badge {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #f59e0b;
+}
+
+@keyframes rankGlow1 {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(245,158,11,.3), 0 20px 50px rgba(245,158,11,.12); }
+  50%       { box-shadow: 0 0 0 1px rgba(245,158,11,.5), 0 20px 60px rgba(245,158,11,.28); }
+}
+
+/* Top 2 e 3 — Em alta */
+.product-card.rank-2,
+.product-card.rank-3 {
+  border-color: rgba(121, 131, 245, 0.45) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(88, 101, 242, 0.12);
+}
+.product-card.rank-2 .rank-badge,
+.product-card.rank-3 .rank-badge {
+  background: rgba(88, 101, 242, 0.12);
+  border: 1px solid rgba(88, 101, 242, 0.3);
+  color: var(--accent-2);
+}
