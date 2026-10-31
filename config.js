@@ -7,9 +7,8 @@
    ============================================================ */
 
 window.PYBOTS_CONFIG = {
-  /* Grupo do Telegram da comunidade PYBOTS.
-     Substitua pelo link do grupo quando ele for criado. */
-  telegramGroup: 'https://t.me/aldorip',
+  /* Grupo oficial do Telegram da comunidade PYBOTS. */
+  telegramGroup: 'https://t.me/pybotsoficial',
 
   /* Contato comercial no Telegram (pessoal). */
   telegramContact: 'https://t.me/aldorip',

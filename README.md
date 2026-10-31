@@ -55,7 +55,7 @@ precisa ser alterado para trocar contatos:
 
 ```js
 window.PYBOTS_CONFIG = {
-  telegramGroup: 'https://t.me/...',   // grupo da comunidade
+  telegramGroup: 'https://t.me/pybotsoficial', // grupo da comunidade
   whatsappNumber: '5585999999999',    // WhatsApp comercial (vazio = envia por e-mail)
   email: 'contato@pybots.com.br',
   github: 'https://github.com/aldorip',
