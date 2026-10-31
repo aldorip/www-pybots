@@ -1,54 +1,111 @@
-# www-pybots
+# PYBOTS — Portal de Tecnologia, Automação e Desenvolvimento
 
-Landing page oficial da **PyBots** — sua central de automação, bots, WhatsApp, PDV, APIs e sistemas.
+Site institucional e comercial da **PYBOTS**: desenvolvimento de APIs, bots,
+automação de processos, integração de sistemas, IA aplicada e sistemas web sob medida.
 
-## Visão Geral
+## Visão geral
 
-Este repositório contém o site institucional da PyBots, projetado para:
+Portal estático de página única, construído para funcionar como máquina de
+aquisição de clientes e construção de comunidade:
 
-- Apresentar todos os produtos e sistemas desenvolvidos
-- Exibir portfólio de clientes ativos e cases de sucesso
-- Facilitar contato para novos projetos e contratos
-- Servir como hub central para links de sistemas em produção
+- **Hero** com terminal animado e partículas discretas
+- **Ecossistema** — seis áreas de atuação
+- **Projetos** — portfólio real, com links para o GitHub
+- **PYBOTS Free** — biblioteca de ferramentas gratuitas da comunidade
+- **Serviços sob medida** — proposta comercial e processo de trabalho
+- **Comunidade** — CTA para o grupo do Telegram
+- **Contato** — formulário de orçamento com validação, honeypot antispam
+  e envio via WhatsApp ou e-mail
 
-## Stack Recomendada
+## Stack
 
-Para uma landing page moderna, rápida e fácil de manter, inspirada em sites como GitHub, Discord e Stripe:
+Primeira versão 100% estática — sem backend e sem banco de dados:
 
-- **Framework:** [Astro](https://astro.build/) (SSG focado em performance e SEO)
-- **UI:** [Tailwind CSS](https://tailwindcss.com/) + componentes reutilizáveis
-- **Deploy:** Vercel, Netlify ou Cloudflare Pages (gratuito e com CDN global)
-- **CMS (opcional):** Decap CMS ou Sanity para conteúdo dinâmico
+| Camada    | Escolha                                            |
+|-----------|----------------------------------------------------|
+| Frontend  | HTML5 + CSS3 + JavaScript vanilla (sem framework)  |
+| Fontes    | Clash Display, Satoshi (Fontshare) + JetBrains Mono |
+| Deploy    | Docker/Nginx, Vercel, Netlify ou GitHub Pages      |
 
-## Estrutura do Projeto
+> **Evolução recomendada:** quando surgir a área de membros, biblioteca de
+> downloads ou painel administrativo, migrar para **Astro + Tailwind**
+> (conteúdo em MDX, islands de interatividade) com backend conforme a
+> necessidade — a estrutura de pastas já foi organizada pensando nisso.
+
+## Estrutura
 
 ```
 www-pybots/
-├── public/              # Assets estáticos (imagens, favicon, etc.)
-├── src/
-│   ├── components/      # Componentes UI (Header, Footer, Cards, etc.)
-│   ├── layouts/         # Layouts base (MainLayout.astro)
-│   ├── pages/           # Páginas (index.astro, about.astro, contact.astro)
-│   └── styles/          # Estilos globais
-├── astro.config.mjs     # Configuração do Astro
-├── tailwind.config.mjs  # Configuração do Tailwind
-└── package.json         # Dependências
+├── index.html        # página única com todas as seções
+├── base.css          # reset e base de acessibilidade
+├── style.css         # design system e componentes
+├── app.js            # interações (terminal, partículas, form, nav)
+├── config.js         # ⚙️ links e contatos — EDITE AQUI
+├── robots.txt
+├── sitemap.xml
+├── Dockerfile        # deploy em contêiner (Nginx)
+├── nginx.conf
+└── assets/           # imagens WebP, favicon, OG cover
 ```
 
-## Próximos Passos
+## Configuração
 
-1. Configurar ambiente Astro + Tailwind
-2. Criar estrutura de páginas e componentes
-3. Adicionar conteúdo sobre produtos PyBots
-4. Integrar formulário de contato (ex: Formspree ou EmailJS)
-5. Deploy automático via GitHub Actions
+Todos os links externos ficam em **`config.js`** — nenhum outro arquivo
+precisa ser alterado para trocar contatos:
 
-## Links Úteis
+```js
+window.PYBOTS_CONFIG = {
+  telegramGroup: 'https://t.me/...',   // grupo da comunidade
+  whatsappNumber: '5585999999999',    // WhatsApp comercial (vazio = envia por e-mail)
+  email: 'contato@pybots.com.br',
+  github: 'https://github.com/aldorip',
+};
+```
 
-- [Documentação Astro](https://docs.astro.build/)
-- [Tailwind CSS](https://tailwindcss.com/docs)
-- [Exemplos de landing pages](https://github.com/topics/landing-page-template)
+Enquanto `whatsappNumber` estiver vazio, o formulário de orçamento é
+enviado por e-mail (mailto). Ao preencher o número, o envio passa a abrir
+o WhatsApp com a mensagem já formatada.
+
+## Rodando localmente
+
+```bash
+# qualquer servidor estático
+python3 -m http.server 8080
+# ou
+npx serve .
+```
+
+## Deploy
+
+### Docker (VPS / Dokploy)
+
+```bash
+docker build -t pybots-site .
+docker run -d -p 8080:80 --name pybots-site pybots-site
+```
+
+### Alternativas sem servidor
+
+- **Vercel / Netlify:** importar o repositório, sem configuração extra
+- **GitHub Pages:** Settings → Pages → branch `main`
+
+## Acessibilidade e performance
+
+- Navegação por teclado, skip link, `aria-*` nos controles
+- Respeito a `prefers-reduced-motion` (animações desligadas)
+- Contraste WCAG AA em textos
+- Revelações no scroll sem deslocamento de layout (sem CLS)
+- Imagens WebP com `loading="lazy"` e dimensões explícitas
+- Carga inicial ≈ 180 KB
+
+## Roadmap
+
+- [ ] Área de membros da comunidade
+- [ ] Biblioteca de downloads (scripts e templates)
+- [ ] Login de usuários e painel administrativo
+- [ ] Sistema de artigos e tutoriais
+- [ ] Migração para Astro + CMS headless
 
 ---
 
-**PyBots** — Automatizando o futuro, um bot de cada vez.
+**PYBOTS** — Transformamos ideias em soluções inteligentes.
